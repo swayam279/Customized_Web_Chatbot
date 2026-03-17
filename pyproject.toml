@@ -5,13 +5,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chardet>=7.1.0",
+    "charset-normalizer>=3.4.6",
+    "chromadb>=1.5.5",
     "crawl4ai>=0.8.0",
     "dotenv>=0.9.9",
     "ipykernel>=7.2.0",
     "langchain>=1.2.12",
+    "langchain-chroma>=1.1.0",
     "langchain-classic>=1.0.3",
+    "langchain-community>=0.4.1",
     "langchain-core>=1.2.19",
     "langchain-mistralai>=1.1.2",
+    "langchain-text-splitters>=1.1.1",
     "playwright>=1.58.0",
     "pydantic>=2.12.5",
     "pymongo>=4.16.0",
@@ -20,6 +26,7 @@ dependencies = [
     "streamlit>=1.55.0",
     "tavily>=1.1.0",
     "ultimate-sitemap-parser>=1.8.0",
+    "urllib3>=2.6.3",
     "validators>=0.35.0",
 ]
 

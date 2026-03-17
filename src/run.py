@@ -10,6 +10,10 @@ sitemap= create_sitemap(url)
 result= scrape(sitemap)
 
 end= time.time()
+time_taken= end-start
 print(result)
 
-print(f'\n\nThe total time taken was: {end - start}')
+if time_taken <= 60:
+    print(f'The time taken was: {time_taken} seconds')
+else:
+    print(f'The time taken was: {time_taken/60} minutes')
