@@ -14,7 +14,7 @@ def build_documents(crawled_data: list[dict]) -> list[Document]:
             }
         )
         documents.append(doc)
-
+    print(f"Generated {len(documents)} documents.")
     return documents
 
 if __name__ == "__main__":

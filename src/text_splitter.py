@@ -22,12 +22,14 @@ def split_documents_in_chunks(documents):
 
 
         filtered_chunks.append(chunk)
-
+    print(f"Generated {len(filtered_chunks)} chunks.")
     return filtered_chunks
 
 if __name__ == "__main__":
-#   print("This code works right now.")
-  crawler_data= scrape(["https://docs.langchain.com/oss/python/integrations/tools"], "https://docs.langchain.com/")
-  crawled_documents= build_documents(crawler_data)
-  docs= split_documents_in_chunks(crawled_documents)
-  print(docs[-2].metadata)
+    # print("This code works right now.")
+    from crawler import scrape
+    from document_generator import build_documents
+    crawler_data= scrape(["https://docs.langchain.com/oss/python/integrations/tools"], "https://docs.langchain.com/")
+    crawled_documents= build_documents(crawler_data)
+    docs= split_documents_in_chunks(crawled_documents)
+    print(docs[-2].metadata)

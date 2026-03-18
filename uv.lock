@@ -212,8 +212,6 @@ name = "asl-web-chatbot"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "chardet" },
-    { name = "charset-normalizer" },
     { name = "chromadb" },
     { name = "crawl4ai" },
     { name = "dotenv" },
@@ -225,6 +223,8 @@ dependencies = [
     { name = "langchain-core" },
     { name = "langchain-mistralai" },
     { name = "langchain-text-splitters" },
+    { name = "langgraph" },
+    { name = "nest-asyncio" },
     { name = "playwright" },
     { name = "pydantic" },
     { name = "pymongo" },
@@ -233,14 +233,11 @@ dependencies = [
     { name = "streamlit" },
     { name = "tavily" },
     { name = "ultimate-sitemap-parser" },
-    { name = "urllib3" },
     { name = "validators" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "chardet", specifier = ">=7.1.0" },
-    { name = "charset-normalizer", specifier = ">=3.4.6" },
     { name = "chromadb", specifier = ">=1.5.5" },
     { name = "crawl4ai", specifier = ">=0.8.0" },
     { name = "dotenv", specifier = ">=0.9.9" },
@@ -252,6 +249,8 @@ requires-dist = [
     { name = "langchain-core", specifier = ">=1.2.19" },
     { name = "langchain-mistralai", specifier = ">=1.1.2" },
     { name = "langchain-text-splitters", specifier = ">=1.1.1" },
+    { name = "langgraph", specifier = ">=1.1.2" },
+    { name = "nest-asyncio", specifier = ">=1.6.0" },
     { name = "playwright", specifier = ">=1.58.0" },
     { name = "pydantic", specifier = ">=2.12.5" },
     { name = "pymongo", specifier = ">=4.16.0" },
@@ -260,7 +259,6 @@ requires-dist = [
     { name = "streamlit", specifier = ">=1.55.0" },
     { name = "tavily", specifier = ">=1.1.0" },
     { name = "ultimate-sitemap-parser", specifier = ">=1.8.0" },
-    { name = "urllib3", specifier = ">=2.6.3" },
     { name = "validators", specifier = ">=0.35.0" },
 ]
 
