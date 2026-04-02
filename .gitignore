@@ -1,3 +1,4 @@
 .env
 __pycache__
 chroma_web_chatbot
+server.log

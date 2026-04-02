@@ -8,7 +8,9 @@ dependencies = [
     "chromadb>=1.5.5",
     "crawl4ai>=0.8.0",
     "dotenv>=0.9.9",
+    "fastapi>=0.135.1",
     "ipykernel>=7.2.0",
+    "jinja2>=3.1.6",
     "langchain>=1.2.12",
     "langchain-chroma>=1.1.0",
     "langchain-classic>=1.0.3",
@@ -21,11 +23,13 @@ dependencies = [
     "playwright>=1.58.0",
     "pydantic>=2.12.5",
     "pymongo>=4.16.0",
+    "python-multipart>=0.0.22",
     "requests>=2.32.5",
     "ruff>=0.15.6",
     "streamlit>=1.55.0",
     "tavily>=1.1.0",
     "ultimate-sitemap-parser>=1.8.0",
+    "uvicorn[standard]>=0.42.0",
     "validators>=0.35.0",
 ]
 
